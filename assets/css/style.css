@@ -1,0 +1,235 @@
+/* CSS Document */
+/* Layout */
+.bdy {
+    background-image: url("../images/circles-light.png");
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+.container {
+    width: 960px;
+    margin: auto;
+}
+.container.navFlex {
+    display: flex;
+    justify-content: space-between;
+}
+.row {
+    width: 100%;
+}
+.site-main {
+    display: flex;
+}
+#main {
+    width: 650px;
+    flex-grow: 1;
+    margin-right: 3rem;
+}
+#side_bar {
+    width: 270px;
+    height: 1%;
+}
+.flex-grid {
+    display: flex;
+}
+.col {
+    flex: 1;
+    text-align: center !important;
+    position: relative;
+}
+img {
+    width: 90%;
+}
+.py-3 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.py-2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.px-1 {
+    padding-right: 1.8rem;
+    padding-left: 1.8rem;
+}
+.mb-2 {
+    margin-bottom: 2rem;
+}
+.mt-4 {
+    margin-top: 4rem;
+}
+.mt-1 {
+    margin-top: 1.1rem;
+}
+.my-08 {
+    margin-top: 1.1rem;
+    margin-bottom: 1rem;
+}
+.fixed {
+    position: fixed;
+}
+hr {
+    color: grey;
+    opacity: .4;
+    margin: 23px 0;
+}
+.w-50 {
+    width: 50%
+}
+/* Site Fonts */
+.hdin-fnts {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+#side_bar .fa {
+    font-size: 3rem !important;
+    float: left;
+    padding-right: 7%;
+}
+/* Site Colors */ 
+/* Teal color (used for headings and backgrounds) */
+
+.red {
+    color: #f00;
+}
+.teal {
+    color: #4aaaa5;
+}
+.tealbg {
+    background-color: #4aaaa5;
+}
+/* Regular font color (used for paragraphs and all text besides the headings) */
+.regular {
+    color: #777777;
+}
+/* Main header background color, Main content background color */
+.whitebg {
+    background-color: #ffffff;
+}
+.white-text {
+    color: #ffffff;
+}
+/* Main header border color */
+.greyBorder {
+    border-bottom: 2.5px solid #cccccc;
+}
+/* Main content border color */
+.whiteishBorder {
+    border: 1px solid #dddddd;
+}
+/* Footer background color */
+.greybg {
+    background-color: #666666;
+}
+/* Typography */
+.t-1 {
+    font-size: 1.2rem;
+}
+.title-3 {
+    font-size: 1.4rem;
+}
+.center-text {
+    text-align: center;
+}
+.display-1-8 {
+    font-size: 1.8rem;
+}
+.b-800 {
+    font-weight: 800;
+}
+.b-600 {
+    font-weight: 600;
+}
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+#main p {
+    text-align: justify;
+    padding: .6rem 0;
+    line-height: 1.4rem;
+}
+/* Header */
+#logo {
+    flex-shrink: 0;
+    width: 250px;
+    height: 55px;
+    padding: 2rem 0 .2rem 0;
+}
+#main_nav {
+    flex-shrink: 0;
+    display: inline-flex;
+    list-style-type: none;
+    margin: 10px 0;
+}
+#main_nav ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#main_nav li {
+    display: inline-block;
+    list-style-type: none;
+}
+#main_nav a {
+    padding: 0 21px;
+    font-size: 1.3rem;
+    line-height: 67px;
+}
+#main_nav a:hover {
+    color: #4aaaa5;
+    border-bottom: 1px solid#4aaaa5;
+}
+#main_nav a.active {
+    color: #4aaaa5;
+}
+/* Main */
+.rounded-corners {
+    border-radius: 8%;
+}
+.port_img {
+    float: left;
+    padding-right: 19px;
+}
+#interests {
+    margin: 1.5rem .2rem 2rem 1rem;
+}
+#interests li {
+    margin: 1rem .2rem;
+}
+.port_title {
+    color: #fff;
+    background-color: #4aaaa5b3;
+    padding: 16px 11px;
+    vertical-align: middle;
+    position: absolute;
+    z-index: 2;
+    bottom: 29px;
+    width: 231px;
+    left: 14px;
+}
+/* Forms */
+label {
+    display: block;
+    margin: 16px 0 5px 0 !important;
+}
+input {
+    width: 98%;
+    height: 26px;
+    padding-left: .4rem
+}
+textarea {
+    width: 98%;
+    padding-top: .3rem;
+    padding-left: .4rem;
+    border: .9px solid #ccc;
+}
+button {
+    padding: .5rem 1.5rem;
+    font-size: 1rem;
+    margin-top: 18px;
+    border: none;
+}
+/* Footer */
+#footer {
+    border-top: .5rem solid #4aaaa5;
+    color: #c8cccc;
+}
