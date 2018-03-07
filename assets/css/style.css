@@ -1,6 +1,22 @@
 /* CSS Document */
 
-/* General */
+/*----------------------------------------------------------------
+[Table of contents]
+
+1. GLOBAL 
+2. LAYOUT
+3. SITE FONTS
+4. SITE COLORS
+5. TYPOGRAPHY
+6. HEADER
+7. ELEMENTS
+8. MOBILE
+
+-------------------------------------------------------------------*/
+
+/* ------------------------------------------
+ GENERAL
+--------------------------------------------- */
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +27,12 @@ html {
 img {
     max-width: 100%;
 }
-/* Layout */
+.flex-grid img {
+    width: 100%;
+}
+/* ------------------------------------------
+  LAYOUT
+--------------------------------------------- */
 .bdy {
     height: 100%;
     background-image: url("../images/circles-light.png");
@@ -37,8 +58,8 @@ img {
 }
 .flex-grid {
     display: flex;
+    flex-direction: row;
 }
-
 img {
     width: 90%;
 }
@@ -53,6 +74,9 @@ img {
 .px-1 {
     padding-right: 1.8rem;
     padding-left: 1.8rem;
+}
+.pt-1 {
+    padding-top: 5rem;
 }
 .mb-2 {
     margin-bottom: 2rem;
@@ -70,9 +94,12 @@ img {
     margin-top: 1.1rem;
     margin-bottom: 1rem;
 }
-.mx-1{
+.mx-1 {
     margin-right: 1.8rem;
     margin-left: 1.8rem;
+}
+.mr-1 {
+    margin-right: 0.8rem;
 }
 .fixed {
     position: fixed;
@@ -85,7 +112,9 @@ hr {
 .w-50 {
     width: 50%
 }
-/* Site Fonts */
+/* ------------------------------------------
+  SITE FONTS
+--------------------------------------------- */
 .hdin-fnts {
     font-family: 'Georgia', Times, Times New Roman, serif;
 }
@@ -94,9 +123,9 @@ hr {
     float: left;
     padding-right: 7%;
 }
-/* Site Colors */ 
-/* Teal color (used for headings and backgrounds) */
-
+/* ------------------------------------------
+  SITE COLORS
+--------------------------------------------- */
 .red {
     color: #f00;
 }
@@ -106,30 +135,21 @@ hr {
 .tealbg {
     background-color: #4aaaa5;
 }
-/* Regular font color (used for paragraphs and all text besides the headings) */
 .regular {
     color: #777777;
 }
-/* Main header background color, Main content background color */
 .whitebg {
     background-color: #ffffff;
 }
 .white-text {
     color: #ffffff;
 }
-/* Main header border color */
-.greyBorder {
-    border-bottom: 2.5px solid #cccccc;
-}
-/* Main content border color */
-.whiteishBorder {
-    border: 1px solid #dddddd;
-}
-/* Footer background color */
 .greybg {
     background-color: #666666;
 }
-/* Typography */
+/* ------------------------------------------
+  TYPOGRAPHY
+--------------------------------------------- */
 .t-1 {
     font-size: 1.2rem;
 }
@@ -148,6 +168,9 @@ hr {
 .b-600 {
     font-weight: 600;
 }
+.lnks {
+    font-size: 1.1rem;
+}
 a {
     color: inherit; /* blue colors for links too */
     text-decoration: inherit; /* no underline */
@@ -157,35 +180,120 @@ a {
     padding: .6rem 0;
     line-height: 1.4rem;
 }
-/* Header */
+.port_title {
+    color: #fff;
+    background-color: #4aaaa5b3;
+    padding: 16px 11px;
+    vertical-align: middle;
+    position: relative;
+    z-index: 2;
+    bottom: 67px;
+    left: 0px;
+}
+/* ------------------------------------------
+  HEADER
+--------------------------------------------- */
+header {
+    background: #fff;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    left: 0;
+    opacity: .8;
+    color: rgb(78, 78, 78);
+    top: 0;
+    border-bottom: .2rem solid #cecece !important;
+}
+.logo {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 55px;
+    padding: 0 3rem;
+    color: #fff;
+    float: left;
+    margin-left: 0;
+}
+.nav-collapse ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: block;
+    list-style: none;
+}
+.nav-collapse li {
+    width: 100%;
+    display: block;
+}
+.dev {
+    position: relative;
+    top: 1.1rem;
+}
+.nav-collapse, .nav-collapse * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.nav-collapse, .nav-collapse ul {
+    list-style: none;
+    width: 100%;
+    float: left;
+}
 
-nav {
-    position: absolute;
-    right: 23px;
+@media screen and (min-width: 40em) {
+.nav-collapse {
+    float: right;
+    width: auto;
 }
-.topnav {
-    font-size: 1.3rem;
-    display: flex;
+}
+.nav-collapse li {
+    width: 100%;
+    display: inline-flex;
     flex-direction: row;
-    padding: 2rem 0;
 }
-.topnav span.lnks:hover {
+
+@media screen and (min-width: 40em) {
+.nav-collapse li {
+    width: auto;
+}
+}
+.nav-collapse a {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    border-top: 1px solid white;
+    text-decoration: none;
+    background: #fff;
+    padding: 0.7em 1em;
+    width: 100%;
+    float: left;
+}
+.nav-collapse a:active, .nav-collapse .active a {
     color: #4aaaa5;
-    border-bottom: 1px solid#4aaaa5;
 }
-.topnav span.dev {
-    padding: 1.4rem;
-}
-#logo {
-    height: 55px;
-}
-#main_nav a.active {
+.nav-collapse a .lnks:hover {
     color: #4aaaa5;
+    border-bottom: .1rem solid #4aaaa5;
 }
-.mbl-icon{
+
+@media screen and (min-width: 40em) {
+.nav-collapse a {
+    border-left: 1px solid white;
+    padding: 1.02em 2em;
+    text-align: center;
+    border-top: 0;
+    float: left;
+    margin: 0;
+}
+}
+
+@media screen and (min-width: 40em) {
+.nav-collapse ul ul a {
     display: none;
 }
-/* Main */
+}
+/* ------------------------------------------
+    ELEMENTS
+  --------------------------------------------- */
+  
 .rounded-corners {
     border-radius: 8%;
 }
@@ -199,22 +307,13 @@ nav {
 #interests li {
     margin: 1rem .2rem;
 }
-.port_title {
-    color: #fff;
-    background-color: #4aaaa5b3;
-    padding: 16px 11px;
-    vertical-align: middle;
-    position: absolute;
-    z-index: 2;
-    bottom: 29px;
-    width: 231px;
-    left: 14px;
-}
-/* Sidebar */
-.social_links{
+.social_links {
     display: flex;
 }
-/* Forms */
+/* ------------------------------------------
+  FORM
+  --------------------------------------------- */
+  
 label {
     display: block;
     margin: 16px 0 5px 0 !important;
@@ -236,30 +335,81 @@ button {
     margin-top: 18px;
     border: none;
 }
-/* Footer */
+/* ------------------------------------------
+    FOOTER
+  --------------------------------------------- */
+  
 #footer {
     border-top: .5rem solid #4aaaa5;
     color: #c8cccc;
 }
 
-/* General Rules End */
+/* ------------------------------------------
+    MOBILE
+  --------------------------------------------- */
+
 /*Extra small devices (landscape phones, less than 575px) */
 @media (max-width: 575px) {
-    .social_links{
-        justify-content: center;
-    }
+.social_links {
+    justify-content: center;
 }
+#side_bar {
+    text-align: center;
+}
+#logo {
+    margin-right: 0px;
+}
+}
+
 /*Extra small devices (landscape phones, greater than 575px) */
 @media (min-width: 575px) {
-    .social_links{
-        justify-content: flex-start;
-    }
+.social_links {
+    justify-content: flex-start;
+}
+.logo {
+    margin-left: 1.1rem;
+}
 }
 
+/* Smaller devices (landscape phones, less than 639px) */
+@media (max-width: 639px) {
+.flex-grid {
+    flex-direction: column;
+}
+span.dev {
+    display: none;
+}
+.nav-collapse li.btm_bdr {
+    border-bottom: .1rem solid #cecece;
+}
+.nav-collapse {
+    display: none;
+}
+.col {
+    margin-bottom: -33px;
+}
+}
 
+/* Smaller devices (landscape phones, greater than 639px) */
+@media (min-width: 639px) {
+.mbl-icon {
+    display: none;
+}
+.col {
+    margin-bottom: -33px;
+    margin-right: 1.4rem;
+}
+.open {
+    display: block !important;
+}
+}
 
 /*Small devices (landscape phones, less than 768px) */
+
 @media (max-width: 767px) {
+.container {
+    padding: 0 .8rem;
+}
 #main {
     width: 100%;
     display: block;
@@ -282,18 +432,6 @@ button {
     height: 55px;
     padding: 2rem 1.2rem .2rem 1.2rem;
 }
-.topnav .icon {
-    display: block;
-    font-size: 2rem;
-
-    position: relative
-}
-.topnav .open{
-    display: block;
-}
-.topnav.closed{
-    display: none;
-}
 .topnav {
     font-size: 1.3rem;
     height: 0;
@@ -303,34 +441,19 @@ button {
 .topnav li {
     margin-bottom: 2rem;
 }
-.topnav span.dev {
-    display: none;
-}
 #hamburger {
-    display: block;
+    position: absolute;
     font-size: 2.8rem;
-    position: relative;
-    top: 1rem;
+    top: .1rem;
     cursor: pointer;
+    right: 1.2rem;
 }
-#cross {
-    font-size: 5rem;
-    display: none;
-    left: 2.7rem;
-    top: 1.1rem;
-    position: relative;
-}
-
 }
 
 /*Small devices (landscape phones, greater than 768px) */
 @media (min-width: 767px) {
-
-.mbl-icon{
-    display: none;
-}
-.topnav{
-    height: inherit;
+article {
+    width: 100%;
 }
 .site-main {
     display: flex;

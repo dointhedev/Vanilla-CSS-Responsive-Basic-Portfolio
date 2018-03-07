@@ -1,21 +1,19 @@
-$( document ).ready(function() {
+$(document).ready(function () {
     var hamBurg = $('#hamburger');
-    var crs = $('#cross');
-    var topnav = $('.topnav');
-    console.log(hamBurg);
-    console.log(crs);
-    console.log(topnav);
+    var topnav = $('.nav-collapse');
+    $(hamBurg).on('click', mblMenu);
 
-    $(hamBurg).click(function() {
-            $(this).hide();
-            $(crs).show();
+    function mblMenu() {
+        if ($(hamBurg).data("ishidden") === false) {
             $(topnav).slideToggle();
-          });
-          $(crs).click(function() {
-            $(this).hide();
-            $(hamBurg).show();
+            $(hamBurg).data("ishidden", true)
+        } else {
+            $(hamBurg).data("ishidden", false)
             $(topnav).slideToggle();
-          });
-    
-        });
-    
+            $(topnav).toggleClass("open");
+        }
+    }
+});
+
+
+

@@ -12,52 +12,43 @@
 <!-- Font Awesome Fonts -->
 <link rel="stylesheet" type="text/css" media="screen" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body class="bdy regular">
-<header class="greyBorder whitebg mb-2">
-  <div class="container navFlex">
-    <div id="logo" class="tealbg py-2">
-      <h1 class="hdin-fnts display-1-8 white-text center-text b-600">Avi Davis</h1>
-    </div>
-    <nav id="myTopNav"></nav>
-        <a href="#" id="hamburger" class="mbl-icon">&#9776;</a>
-        <a href="#" id="cross" class="mbl-icon">&#735;</a>
-
-				<ul class="topnav closed">
-            <li> <a href="index.html" class="active"><span class="lnks">About</span></a> <span class="dev">|</span> </li>
-            <li> <a href="portfolio.html"><span class="lnks">Portfolio</span></a> <span class="dev">|</span> </li>
-            <li> <a href="contact.html"><span class="lnks">Contact</span></a> </li>
-				</ul>
-			</nav>
-  </div>
+<body class="bdy regular pt-1">
+<header> <a href="#home" class="logo tealbg py-2" data-scroll>Avi Davis</a> <a href="#" id="hamburger" class="mbl-icon" data-ishidden = false >&#9776;</a>
+  <nav class="nav-collapse mr-1">
+    <ul>
+      <li class="menu-item active btm_bdr"><a href="index.html" data-scroll ><span class="lnks">About</span></a> <span class="dev">|</span></a></li>
+      <li class="menu-item btm_bdr"><a href="portfolio.html" data-scroll><span class="lnks">Portfolio</span></a> <span class="dev">|</span></a></li>
+      <li class="menu-item"><a href="contact.html" data-scroll><span class="lnks">Contact</span></a></li>
+    </ul>
+  </nav>
 </header>
 <section id="main">
   <div class="container">
     <div class="row site-main">
-        <article class=" whitebg left-container py-2 px-1">
-          <h2 class="hdin-fnts display-1-8 teal b-800">About Me</h2>
-          <hr>
-          <img src="assets/images/portfolio_image.jpg" class="w-50 port_img rounded-corners" />
-          <h3 class="teal b-600 t-1">My Bio</h3>
-          <p>Hello, My name is Avi and I have been in website, e-commerce, mobile and web
-            application development and design for over a decade. I have completed 100's of projects that
-            range in complexity and budget. I provide each project an incredibly high quality of work coupled
-            with amazing customer service.</p>
-          <p> I have worked with incredibly high-end clients like TCL Chinese Theatre, AM Trucking, JCL Traffic
-            and Clover Juice. I look forward to working for you as well. </p>
-          <h3 class="teal b-600 mt-1 t-1">My Main Interests</h3>
-          <ul id="interests">
-            <li> <i class="fa fa-check teal"></i>&nbsp;Technology</li>
-            <li> <i class="fa fa-check teal"></i>&nbsp;Design</li>
-            <li> <i class="fa fa-check teal"></i>&nbsp;Video Production</li>
-            <li> <i class="fa fa-check teal"></i>&nbsp;Emergency Medicine</li>
-          </ul>
-          <h3 class="teal b-600 mt-1 t-1">Additional Skills and Software Experience</h3>
-          <p>Project Management (JIRA (Agile), TeamWork (Waterfall)), UI/UX, HTML, CSS, Bootstrap, WordPress,
-            WooCommerce, Github, Adobe CC, Salesforce, Hubspot, Google Adwords, Google Analytics, Microsoft
-            Office. </p>
-        </article>
-       
-      <aside id="side_bar" class="right-container whitebg py-2 px-1">
+      <article class=" whitebg py-2 px-1">
+        <h2 class="hdin-fnts display-1-8 teal b-800">About Me</h2>
+        <hr>
+        <img src="assets/images/portfolio_image.jpg" class="w-50 port_img rounded-corners" />
+        <h3 class="teal b-600 t-1">My Bio</h3>
+        <p>Hello, My name is Avi and I have been in website, e-commerce, mobile and web
+          application development and design for over a decade. I have completed 100's of projects that
+          range in complexity and budget. I provide each project an incredibly high quality of work coupled
+          with amazing customer service.</p>
+        <p> I have worked with incredibly high-end clients like TCL Chinese Theatre, AM Trucking, JCL Traffic
+          and Clover Juice. I look forward to working for you as well. </p>
+        <h3 class="teal b-600 mt-1 t-1">My Main Interests</h3>
+        <ul id="interests">
+          <li> <i class="fa fa-check teal"></i>&nbsp;Technology</li>
+          <li> <i class="fa fa-check teal"></i>&nbsp;Design</li>
+          <li> <i class="fa fa-check teal"></i>&nbsp;Video Production</li>
+          <li> <i class="fa fa-check teal"></i>&nbsp;Emergency Medicine</li>
+        </ul>
+        <h3 class="teal b-600 mt-1 t-1">Additional Skills and Software Experience</h3>
+        <p>Project Management (JIRA (Agile), TeamWork (Waterfall)), UI/UX, HTML, CSS, Bootstrap, WordPress,
+          WooCommerce, Github, Adobe CC, Salesforce, Hubspot, Google Adwords, Google Analytics, Microsoft
+          Office. </p>
+      </article>
+      <aside id="side_bar" class="whitebg py-2 px-1">
         <h3 class="teal b-600 title-3 hdin-fnts">Connect with Me</h3>
         <hr class="my-08">
         <ul class="social_links">
@@ -76,7 +67,7 @@
     </div>
   </div>
 </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> 
 <script src="assets/js/script.js"></script>
 </body>
 </html>

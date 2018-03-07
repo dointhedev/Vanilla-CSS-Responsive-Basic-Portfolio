@@ -13,64 +13,59 @@
 <link rel="stylesheet" type="text/css" media="screen" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body class="bdy regular">
-<header class="greyBorder whitebg mb-2">
-  <div class="container navFlex">
-    <div id="logo" class="tealbg py-2">
-      <h1 class="hdin-fnts display-1-8 white-text center-text b-600">Avi Davis</h1>
-    </div>
-    <nav id="main_nav">
-      <ul>
-        <li> <a href="index.html" class="active"><span class="nav-inrtxt">About</span></a> <span>|</span> </li>
-        <li> <a href="portfolio.html"><span class="nav-inrtxt">Portfolio</span></a> <span>|</span> </li>
-        <li> <a href="contact.html"><span class="nav-inrtxt">Contact</span></a> </li>
-      </ul>
-    </nav>
-  </div>
+<body class="bdy regular pt-1">
+<header> <a href="#home" class="logo tealbg py-2" data-scroll>Avi Davis</a> <a href="#" id="hamburger" class="mbl-icon" data-ishidden = false >&#9776;</a>
+  <nav class="nav-collapse mr-1">
+    <ul>
+      <li class="menu-item btm_bdr"><a href="index.html" data-scroll ><span class="lnks">About</span></a> <span class="dev">|</span></a></li>
+      <li class="menu-item active btm_bdr"><a href="portfolio.html" data-scroll><span class="lnks">Portfolio</span></a> <span class="dev">|</span></a></li>
+      <li class="menu-item"><a href="contact.html" data-scroll><span class="lnks">Contact</span></a></li>
+    </ul>
+  </nav>
 </header>
-<div id="main-content">
+<section id="main">
   <div class="container">
-    <main class="site-main">
-      <section id="main" class="whitebg py-2 px-1">
-        <article>
-          <h2 class="hdin-fnts display-1-8 teal b-800">Portfolio</h2>
-          <hr>
-          <div class="flex-grid my-08">
-            <div class="col"> <img src="assets/images/ark_am_trucking_orders_h.jpg" alt="Ark ERP">
-              <div class="port_title">Ark Logistics ERP</div>
-            </div>
-            <div class="col"> <img src="assets/images/jcl_traffic_h.png" alt="JCL Traffic">
-              <div class="port_title">JCL Traffic Custom e-Commerce</div>
-            </div>
+    <div class="row site-main">
+      <article class=" whitebg py-2 px-1">
+        <h3 class="hdin-fnts teal b-600 t-1">My Portfolio</h3>
+        <hr>
+        <div class="flex-grid my-08">
+          <div class="col"> <img src="assets/images/ark_am_trucking_orders_h.jpg" alt="Ark ERP">
+            <div class="port_title">Ark Logistics ERP</div>
           </div>
-          <div class="flex-grid my-08">
-            <div class="col"> <img src="assets/images/tcl_chinese_theatre_h.png" alt="TCL Chinese Theatre">
-              <div class="port_title">TCL Chinese Theatre</div>
-            </div>
-            <div class="col"> <img src="assets/images/lyric_house_h.jpg" alt="Lyric House">
-              <div class="port_title">LH Custom WordPress</div>
-            </div>
+          <div class="col"> <img src="assets/images/jcl_traffic_h.png" alt="JCL Traffic">
+            <div class="port_title">JCL Traffic Custom e-Commerce</div>
           </div>
-        </article>
-      </section>
+        </div>
+        <div class="flex-grid my-08">
+          <div class="col"> <img src="assets/images/tcl_chinese_theatre_h.png" alt="TCL Chinese Theatre">
+            <div class="port_title">TCL Chinese Theatre</div>
+          </div>
+          <div class="col"> <img src="assets/images/lyric_house_h.jpg" alt="Lyric House">
+            <div class="port_title">LH Custom WordPress</div>
+          </div>
+        </div>
+      </article>
       <aside id="side_bar" class="whitebg py-2 px-1">
         <h3 class="teal b-600 title-3 hdin-fnts">Connect with Me</h3>
         <hr class="my-08">
-        <ul>
+        <ul class="social_links">
           <li> <a href="https://www.linkedin.com/in/everythingavidavis" alt="LinkedIn" target="_blank"> <i class="fa fa-linkedin-square teal display-1-8" aria-hidden="true"></i> </a> </li>
-          <li> <a href="https://github.com/dointhedev" alt="GitHub" target="_blank"> <i class="fa fa-git-square teal display-1-8"></i> </a> </li>
+          <li class="mx-1"> <a href="https://github.com/dointhedev" alt="GitHub" target="_blank"> <i class="fa fa-git-square teal display-1-8"></i> </a> </li>
           <li> <a href="http://www.codemedia360.com/portfolio" alt="My Personal Website" target="_blank"> <i class="fa fa-globe teal display-1-8"></i> </a> </li>
         </ul>
       </aside>
-    </main>
+    </div>
   </div>
-</div>
-<footer id="footer" class="greybg mt-4">
+</section>
+<footer id="footer" class="greybg mt-2">
   <div class="container">
     <div class="row center-text py-3">
       <p>&#169;&nbsp;Copyright 2018 Avi Davis</p>
     </div>
   </div>
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> 
+<script src="assets/js/script.js"></script>
 </body>
 </html>
