@@ -1,14 +1,30 @@
 /* CSS Document */
+
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+}
+img {
+    max-width: 100%;
+}
 /* Layout */
 .bdy {
+    height: 100%;
     background-image: url("../images/circles-light.png");
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 .container {
-    width: 960px;
-    margin: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
-.container.navFlex {
+.navFlex {
     display: flex;
     justify-content: space-between;
 }
@@ -17,24 +33,12 @@
 }
 .site-main {
     display: flex;
-}
-#main {
-    width: 650px;
-    flex-grow: 1;
-    margin-right: 3rem;
-}
-#side_bar {
-    width: 270px;
-    height: 1%;
+    flex-direction: row;
 }
 .flex-grid {
     display: flex;
 }
-.col {
-    flex: 1;
-    text-align: center !important;
-    position: relative;
-}
+
 img {
     width: 90%;
 }
@@ -56,12 +60,19 @@ img {
 .mt-4 {
     margin-top: 4rem;
 }
+.mt-2 {
+    margin-top: 2rem;
+}
 .mt-1 {
     margin-top: 1.1rem;
 }
 .my-08 {
     margin-top: 1.1rem;
     margin-bottom: 1rem;
+}
+.mx-1{
+    margin-right: 1.8rem;
+    margin-left: 1.8rem;
 }
 .fixed {
     position: fixed;
@@ -147,39 +158,32 @@ a {
     line-height: 1.4rem;
 }
 /* Header */
-#logo {
-    flex-shrink: 0;
-    width: 250px;
-    height: 55px;
-    padding: 2rem 0 .2rem 0;
+
+nav {
+    position: absolute;
+    right: 23px;
 }
-#main_nav {
-    flex-shrink: 0;
-    display: inline-flex;
-    list-style-type: none;
-    margin: 10px 0;
-}
-#main_nav ul {
-    display: inline-block;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-#main_nav li {
-    display: inline-block;
-    list-style-type: none;
-}
-#main_nav a {
-    padding: 0 21px;
+.topnav {
     font-size: 1.3rem;
-    line-height: 67px;
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 0;
 }
-#main_nav a:hover {
+.topnav span.lnks:hover {
     color: #4aaaa5;
     border-bottom: 1px solid#4aaaa5;
 }
+.topnav span.dev {
+    padding: 1.4rem;
+}
+#logo {
+    height: 55px;
+}
 #main_nav a.active {
     color: #4aaaa5;
+}
+.mbl-icon{
+    display: none;
 }
 /* Main */
 .rounded-corners {
@@ -205,6 +209,10 @@ a {
     bottom: 29px;
     width: 231px;
     left: 14px;
+}
+/* Sidebar */
+.social_links{
+    display: flex;
 }
 /* Forms */
 label {
@@ -232,4 +240,109 @@ button {
 #footer {
     border-top: .5rem solid #4aaaa5;
     color: #c8cccc;
+}
+
+/* General Rules End */
+/*Extra small devices (landscape phones, less than 575px) */
+@media (max-width: 575px) {
+    .social_links{
+        justify-content: center;
+    }
+}
+/*Extra small devices (landscape phones, greater than 575px) */
+@media (min-width: 575px) {
+    .social_links{
+        justify-content: flex-start;
+    }
+}
+
+
+
+/*Small devices (landscape phones, less than 768px) */
+@media (max-width: 767px) {
+#main {
+    width: 100%;
+    display: block;
+    flex-grow: 1;
+}
+.display-1-8 {
+    font-size: 1.5rem;
+}
+.site-main {
+    display: flex;
+    flex-direction: column;
+}
+#side_bar {
+    height: 1%;
+    margin-top: 2rem;
+}
+#logo {
+    flex-shrink: 0;
+    width: 43%;
+    height: 55px;
+    padding: 2rem 1.2rem .2rem 1.2rem;
+}
+.topnav .icon {
+    display: block;
+    font-size: 2rem;
+
+    position: relative
+}
+.topnav .open{
+    display: block;
+}
+.topnav.closed{
+    display: none;
+}
+.topnav {
+    font-size: 1.3rem;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+}
+.topnav li {
+    margin-bottom: 2rem;
+}
+.topnav span.dev {
+    display: none;
+}
+#hamburger {
+    display: block;
+    font-size: 2.8rem;
+    position: relative;
+    top: 1rem;
+    cursor: pointer;
+}
+#cross {
+    font-size: 5rem;
+    display: none;
+    left: 2.7rem;
+    top: 1.1rem;
+    position: relative;
+}
+
+}
+
+/*Small devices (landscape phones, greater than 768px) */
+@media (min-width: 767px) {
+
+.mbl-icon{
+    display: none;
+}
+.topnav{
+    height: inherit;
+}
+.site-main {
+    display: flex;
+    flex-direction: row;
+}
+#side_bar {
+    width: 50%;
+    height: 1%;
+    margin-left: 2rem;
+}
+#logo {
+    width: 25%;
+    padding: 2rem 1.2rem .2rem 1.2rem;
+}
 }
