@@ -1,15 +1,15 @@
 # Vanilla-CSS-Responsive-Basic-Portfolio
 > ### Demonstrate the use of vanilla CSS and jQuery to create a basic responsive portfolio site.
 
-## Project Overview
+# Project Overview
 
 This repo shows my ability to code CSS and HTML without using a responsive library like Boostrap. I also, used some basic jQuery event listeners
 
-# View Demo  
+## View Demo  
 
 To view demo click on this link: ([Demo Link](https://dointhedev.github.io/Vanilla-CSS-Responsive-Basic-Portfolio))
 
-# Project Requirements  
+## Project Requirements  
 
  1. Use three @media screen tags, each with one of these max-widths: 980px, 768px and 640px.
 
